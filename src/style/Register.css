@@ -37,7 +37,81 @@ form input {
   margin: 2px;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+} /* Register.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(71, 148, 212) 0%,
+    rgb(204, 132, 37) 100%
+  );
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #ffffffd0;
+  margin-top: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 17px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+form input {
+  background-color: rgba(51, 100, 173, 0.322);
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 2px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+}
+
+form p {
+  font-size: 15px;
+}
+
+form button {
+  background-color: rgba(51, 100, 173, 0.322);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+}
+
+@media only screen and (max-width: 430px) {
+  form {
+    width: 300px;
+    height: auto;
+    margin-top: 30px;
+    padding: 10px;
+  }
+
+  form button {
+    padding: 10px 20px;
+  }
+}
+
 form p {
   font-size: 15px;
 }

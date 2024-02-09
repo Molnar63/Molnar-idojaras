@@ -1,0 +1,62 @@
+/* time.css */
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: #f0f0f0;
+}
+
+.w3-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.w3-card-2 {
+  font-size: 26px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.w3-button {
+  cursor: pointer;
+}
+
+.w3-button.w3-red {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 30px;
+  max-height: 40px;
+}
+
+.w3-button.w3-red:hover {
+  background-color: #d32f2f;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 50px;
+  }
+  .w3-container {
+    padding: 10px;
+    width: 70%;
+  }
+  select {
+    width: 80%;
+  }
+
+  .w3-card-2 {
+    font-size: 20px;
+  }
+
+  .w3-button.w3-red {
+    padding: 3px 6px;
+    max-width: 20px;
+    max-height: 30px;
+  }
+}

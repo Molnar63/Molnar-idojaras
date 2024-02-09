@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Search from "./components/search/Search";
 import CurrentWeather from "./components/current-weather/current-weather";
@@ -31,10 +31,39 @@ const Weather = () => {
       .catch(console.log);
   };
 
+  const handleQuickSearch = (favorite) => {
+    const { city, latitude, longitude } = favorite;
+
+    if (latitude === undefined || longitude === undefined) {
+      console.error("Invalid latitude or longitude values");
+      return;
+    }
+
+    const weatherFetch = fetch(
+      `${WEATHER_API_URL}/weather?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API_KEY}&units=metric`
+    );
+    const forecastFetch = fetch(
+      `${WEATHER_API_URL}/forecast?lat=${latitude}&lon=${longitude}&appid=${WEATHER_API_KEY}&units=metric`
+    );
+
+    Promise.all([weatherFetch, forecastFetch])
+      .then(async (response) => {
+        const weatherResponse = await response[0].json();
+        const forecastResponse = await response[1].json();
+
+        setCurrentWeather({ city, ...weatherResponse });
+        setForecast({ city, ...forecastResponse });
+      })
+      .catch(console.log);
+  };
+
   return (
     <>
       <div className="container">
-        <Search onSearchChange={handleOnSearchChange} />
+        <Search
+          onSearchChange={handleOnSearchChange}
+          onQuickSearch={handleQuickSearch}
+        />
         {currentWeather && <CurrentWeather data={currentWeather} />}
         {forecast && <Forecast data={forecast} />}
       </div>

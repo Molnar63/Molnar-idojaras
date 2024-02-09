@@ -1,0 +1,67 @@
+/* src/components/profile.css */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 1500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.profile-info h2 {
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  margin-bottom: 15px;
+}
+
+.favorites-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorites-list li {
+  margin-bottom: 10px;
+}
+
+.last-visited-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.last-visited-list li {
+  margin-bottom: 10px;
+}
+
+.details-switch {
+  margin-top: 20px;
+}
+
+.update-profile-btn {
+  margin-top: 20px;
+}
+
+button {
+  background-color: rgba(51, 100, 173, 0.322);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.521);
+}
