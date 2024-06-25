@@ -1,0 +1,1099 @@
+{
+	"info": {
+		"_postman_id": "b70acdab-8d98-47a5-8536-63ce93082c2a",
+		"name": "projekt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31273960",
+		"_collection_link": "https://universal-shadow-879194.postman.co/workspace/School-5~1151e366-781a-4122-8952-8c70f2e4b8bc/collection/31273960-b70acdab-8d98-47a5-8536-63ce93082c2a?action=share&source=collection_link&creator=31273960"
+	},
+	"item": [
+		{
+			"name": "NEW USER REGISTRATION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"user_name\": \"narancs\",\r\n        \"user_password\": \"Szianarancs123\",\r\n        \"user_email\": \"narancsszia@gmail.com\",\r\n        \"activation_key\": \"szianarancskey\",\r\n        \"activated\": 1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/mdb5react/registration.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"registration.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PROFILE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9d206758297b0c7acbab97ea8406c3ac37d6a335927530a1d34bbcb5c4dd4c72",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/mdb5react/profile.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"profile.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://localhost/mdb5react/profile.php",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9d206758297b0c7acbab97ea8406c3ac37d6a335927530a1d34bbcb5c4dd4c72",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost/mdb5react/profile.php",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"profile.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 13:14:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "570"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"user_data\": {\n        \"user_id\": 34,\n        \"user_name\": \"Aleks2002\",\n        \"user_password\": \"$2y$10$NNtqLVe1i0G3beZJsjyDfeMa8/omNbr80OalvH4c2F8epavNPU/pS\",\n        \"user_email\": \"aleks.molnar02@gmail.com\",\n        \"activation_key\": \"bgZ0oUoPrW798yODZyzHJeuB7B67EB19\",\n        \"activated\": 1,\n        \"favorites\": [\n            \"Subotica, RS\",\n            \"Novi Sad, RS\"\n        ]\n    },\n    \"last_visited\": [\n        {\n            \"city\": \"Novi Sad, RS\",\n            \"date_time\": \"2024-06-22 15:13:37\"\n        },\n        {\n            \"city\": \"19th district of Budapest, HU\",\n            \"date_time\": \"2024-06-22 15:13:13\"\n        },\n        {\n            \"city\": \"Bajos de Haina, DO\",\n            \"date_time\": \"2024-06-20 12:26:59\"\n        },\n        {\n            \"city\": \"Subotica, RS\",\n            \"date_time\": \"2024-02-09 08:54:03\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "SHOWNOTIFICATIONS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "9d206758297b0c7acbab97ea8406c3ac37d6a335927530a1d34bbcb5c4dd4c72",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/mdb5react/shownotifications.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"shownotifications.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SHOWNOTIFICATIONS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "9d206758297b0c7acbab97ea8406c3ac37d6a335927530a1d34bbcb5c4dd4c72",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost/mdb5react/shownotifications.php",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"shownotifications.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 13:17:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "134"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"notifications\": [\n        {\n            \"notification_id\": 6,\n            \"user_id\": 34,\n            \"expires\": \"2024-06-29 15:13:02\",\n            \"active\": 1,\n            \"city\": \"Subotica, RS\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "ADMIN - GET USERS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/mdb5react/getUsers.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"getUsers.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ADMIN - GET USERS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost/mdb5react/getUsers.php",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"getUsers.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 13:28:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "916"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"users\": [\n        {\n            \"user_id\": 31,\n            \"user_name\": \"Aleks239\",\n            \"user_password\": \"$2y$10$PQstzEVzCand6UQzjmlSFeWCFf0ZDmy4GKTlhkRW1hkUSlBHhaduK\",\n            \"user_email\": \"molnaralex.163@gmail.com\",\n            \"activation_key\": \"Cd1IpJcnHJgURvhKlvjjbHQzjAp5A9hB\",\n            \"activated\": 1\n        },\n        {\n            \"user_id\": 33,\n            \"user_name\": \"Cyber163\",\n            \"user_password\": \"$2y$10$y/qcu3rJqN2X7l99mD5EZuQnTckIpheWgdPNcyqFd9.4CZS3ndomO\",\n            \"user_email\": \"cyber.163163@gmail.com\",\n            \"activation_key\": \"6B2FAMJy3N2psYhlqTh64vbaDw1VVGfa\",\n            \"activated\": 0\n        },\n        {\n            \"user_id\": 34,\n            \"user_name\": \"Aleks2002\",\n            \"user_password\": \"$2y$10$NNtqLVe1i0G3beZJsjyDfeMa8/omNbr80OalvH4c2F8epavNPU/pS\",\n            \"user_email\": \"aleks.molnar02@gmail.com\",\n            \"activation_key\": \"bgZ0oUoPrW798yODZyzHJeuB7B67EB19\",\n            \"activated\": 1\n        },\n        {\n            \"user_id\": 35,\n            \"user_name\": \"narancs\",\n            \"user_password\": \"$2y$10$PPhDLfpkzCkSEqnryE5IyepjnYlEB7.IsBnVj2W4Ft88kTJIYJvCC\",\n            \"user_email\": \"narancsszia@gmail.com\",\n            \"activation_key\": \"CWBPBxx56DMGl0Je8jE036gIMuPDGFSq\",\n            \"activated\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "ADMIN PROFILE",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/mdb5react/admin.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"admin.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ADMIN PROFILE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost/mdb5react/admin.php",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"admin.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 13:30:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "187"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"admin_data\": {\n        \"admin_id\": 1,\n        \"admin_name\": \"admin1\",\n        \"admin_password\": \"$2y$10$ZUWDfxtGrHZWDVZiv8.PROV.ovpQIHb8IPgr24/vGWs1qhoCwJGh2\",\n        \"admin_email\": \"weatheradmin1@gmail.com\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "STATISTICS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/mdb5react/statistics.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"statistics.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "STATISTICS",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost/mdb5react/statistics.php",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"statistics.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 13:36:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2354"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"viewed_cities\": [\n        {\n            \"city\": \"Subotica, RS\",\n            \"user_id\": 31,\n            \"view_count\": 4\n        },\n        {\n            \"city\": \"Oulu, FI\",\n            \"user_id\": 31,\n            \"view_count\": 3\n        },\n        {\n            \"city\": \"Ajman, AE\",\n            \"user_id\": 31,\n            \"view_count\": 3\n        },\n        {\n            \"city\": \"Dubai, AE\",\n            \"user_id\": 31,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"Sombor, RS\",\n            \"user_id\": 31,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"Budapest, HU\",\n            \"user_id\": 31,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"Copenhagen, DK\",\n            \"user_id\": 31,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"Moscow, RU\",\n            \"user_id\": 31,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"Al Ain, AE\",\n            \"user_id\": 31,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"Subotica, RS\",\n            \"user_id\": 34,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"Bajos de Haina, DO\",\n            \"user_id\": 34,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"19th district of Budapest, HU\",\n            \"user_id\": 34,\n            \"view_count\": 1\n        },\n        {\n            \"city\": \"Novi Sad, RS\",\n            \"user_id\": 34,\n            \"view_count\": 1\n        }\n    ],\n    \"user_cities\": [\n        {\n            \"user_name\": \"Aleks2002\",\n            \"city\": \"19th district of Budapest, HU\",\n            \"date_time\": \"2024-06-22 15:13:13\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Ajman, AE\",\n            \"date_time\": \"2024-02-08 10:24:49\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Ajman, AE\",\n            \"date_time\": \"2024-02-08 23:25:58\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Ajman, AE\",\n            \"date_time\": \"2024-02-08 10:23:07\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Al Ain, AE\",\n            \"date_time\": \"2024-02-08 12:50:48\"\n        },\n        {\n            \"user_name\": \"Aleks2002\",\n            \"city\": \"Bajos de Haina, DO\",\n            \"date_time\": \"2024-06-20 12:26:59\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Budapest, HU\",\n            \"date_time\": \"2024-02-08 10:24:42\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Copenhagen, DK\",\n            \"date_time\": \"2024-02-08 10:24:53\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Dubai, AE\",\n            \"date_time\": \"2024-02-08 10:24:18\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Moscow, RU\",\n            \"date_time\": \"2024-02-08 10:25:06\"\n        },\n        {\n            \"user_name\": \"Aleks2002\",\n            \"city\": \"Novi Sad, RS\",\n            \"date_time\": \"2024-06-22 15:13:37\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Oulu, FI\",\n            \"date_time\": \"2024-02-08 10:24:29\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Oulu, FI\",\n            \"date_time\": \"2024-02-08 10:24:59\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Oulu, FI\",\n            \"date_time\": \"2024-02-08 10:25:10\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Sombor, RS\",\n            \"date_time\": \"2024-02-08 10:24:37\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Subotica, RS\",\n            \"date_time\": \"2024-02-08 10:24:34\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Subotica, RS\",\n            \"date_time\": \"2024-02-08 10:24:46\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Subotica, RS\",\n            \"date_time\": \"2024-02-08 23:26:06\"\n        },\n        {\n            \"user_name\": \"Aleks239\",\n            \"city\": \"Subotica, RS\",\n            \"date_time\": \"2024-02-08 23:33:00\"\n        },\n        {\n            \"user_name\": \"Aleks2002\",\n            \"city\": \"Subotica, RS\",\n            \"date_time\": \"2024-02-09 08:54:03\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "DE/ACTIVATE USER",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"user_id\": 35\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/mdb5react/deactivateUser.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"deactivateUser.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DE/ACTIVATE USER",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"user_id\": 35\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost/mdb5react/deactivateUser.php",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"deactivateUser.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 13:51:14 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User activation status updated successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "REMOVE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "35",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/mdb5react/removeUser.php?user_id=35",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"removeUser.php"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "35"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "REMOVE USER",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "35",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost/mdb5react/removeUser.php?user_id=35",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"removeUser.php"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "35"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 13:56:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "55"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"User removed successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "TURN OFF NOTIFICATIONS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/mdb5react/turnoffnotifications.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"turnoffnotifications.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "TURN OFF NOTIFICATIONS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost/mdb5react/turnoffnotifications.php",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"turnoffnotifications.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 14:06:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1106"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "<br />\n<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>\n<tr><th align='left' bgcolor='#f57900' colspan=\"5\"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: Trying to access array offset on value of type null in C:\\xampp\\htdocs\\mdb5react\\turnoffnotifications.php on line <i>21</i></th></tr>\n<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>\n<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>\n<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0014</td><td bgcolor='#eeeeec' align='right'>426624</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\\xampp\\htdocs\\mdb5react\\turnoffnotifications.php' bgcolor='#eeeeec'>...\\turnoffnotifications.php<b>:</b>0</td></tr>\n</table></font>\n{\"success\":true,\"message\":\"Notifications turned off successfully for !\"}"
+				}
+			]
+		},
+		{
+			"name": "REMOVE FAVORITE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost/mdb5react/removeFavorite.php?city=Novi Sad, RS",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"removeFavorite.php"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Novi Sad, RS"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "REMOVE FAVORITE",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost/mdb5react/removeFavorite.php?city=Novi Sad, RS",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"removeFavorite.php"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Novi Sad, RS"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 14:12:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Favorite removed successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "UPDATE PROFILE",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_name\": \"Aleks2002\",\r\n    \"user_email\": \"aleks.molnar02@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost/mdb5react/update_profile.php",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mdb5react",
+						"update_profile.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE PROFILE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\": \"Aleks2002\",\r\n    \"user_email\": \"aleks.molnar02@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost/mdb5react/update_profile.php",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"mdb5react",
+								"update_profile.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jun 2024 14:19:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Authorization"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Profile updated successfully!\"\n}"
+				}
+			]
+		}
+	]
+}

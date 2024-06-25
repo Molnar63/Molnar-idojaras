@@ -1,0 +1,350 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "projekt Copy",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost"
+    }
+  ],
+  "paths": {
+    "/mdb5react/registration.php": {
+      "post": {
+        "tags": [
+          "default"
+        ],
+        "summary": "NEW USER REGISTRATION",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "user_name": "narancs",
+                  "user_password": "Szianarancs123",
+                  "user_email": "narancsszia@gmail.com",
+                  "activation_key": "szianarancskey",
+                  "activated": 1
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/profile.php": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "PROFILE",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "9d206758297b0c7acbab97ea8406c3ac37d6a335927530a1d34bbcb5c4dd4c72"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/shownotifications.php": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "SHOWNOTIFICATIONS",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "9d206758297b0c7acbab97ea8406c3ac37d6a335927530a1d34bbcb5c4dd4c72"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/getUsers.php": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "ADMIN - GET USERS",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/admin.php": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "ADMIN PROFILE",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/statistics.php": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "STATISTICS",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/deactivateUser.php": {
+      "put": {
+        "tags": [
+          "default"
+        ],
+        "summary": "DE/ACTIVATE USER",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "user_id": 35
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/removeUser.php": {
+      "delete": {
+        "tags": [
+          "default"
+        ],
+        "summary": "REMOVE USER",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "561a70d8747f7c76ecb068502bbd167c3b4afe75d8ef3e1ec156881d57e112b0"
+          },
+          {
+            "name": "user_id",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            },
+            "example": "35"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/turnoffnotifications.php": {
+      "post": {
+        "tags": [
+          "default"
+        ],
+        "summary": "TURN OFF NOTIFICATIONS",
+        "requestBody": {
+          "content": {}
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/removeFavorite.php": {
+      "delete": {
+        "tags": [
+          "default"
+        ],
+        "summary": "REMOVE FAVORITE",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683"
+          },
+          {
+            "name": "city",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "Novi Sad, RS"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/mdb5react/update_profile.php": {
+      "post": {
+        "tags": [
+          "default"
+        ],
+        "summary": "UPDATE PROFILE",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "user_name": "Aleks2002",
+                  "user_email": "aleks.molnar02@gmail.com"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "f04ec7b8cedbb24b63f04fc3fc06ebbcafd91a72e5bc0ef68fca06c63177d683"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
