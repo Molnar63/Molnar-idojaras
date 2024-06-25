@@ -1,0 +1,42 @@
+/* src/components/news.css */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-item {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  display: flex;
+}
+
+.news-content {
+  flex: 2;
+  padding: 20px;
+}
+
+.news-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .news-item {
+    width: 100%;
+  }
+}
